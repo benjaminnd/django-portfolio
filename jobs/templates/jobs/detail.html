@@ -11,6 +11,8 @@
 
     <title>Ben Dang</title>
 
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
     <!-- Bootstrap core CSS -->
@@ -19,7 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
-    <link href="{% static 'css/footer.css' %}" rel="stylesheet">
+    <link href="{% static 'css/detail.css' %}" rel="stylesheet">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   </head>
 
@@ -30,14 +32,28 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
+      <section class="jumbotron">
         <div class="container">
-          <h1 class="jumbotron-heading">Detail</h1>
-          <p class="lead text-muted">{{job.summary}}</p>
+          <div class="d-flex justify-content-between">
+            <h2 class="mb-5">{{job.name}}</h2>
+            <p>
+
+              <a href="{% url 'backhome' %}" class="btn btn-primary my-2">Back</a>
+            </p>
+            
+          </div>
+          
+          <p class="lead text-muted">{{job.summary}}.</p>
           <img src="{{job.image.url}}" height=200  alt="">
-          <p>
-            <a href="{% url 'backhome' %}" class="btn btn-primary my-2">Back</a>
-          </p>
+          <div class="social-icons mb-5 mt-5">
+            {% if job.is_personal %}
+            <p>Show code or demo</p>
+            <a class="social-icon" title="Show code"href="{{job.github_url}}" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-icon"  href="{{job.demo_url}}" target="_blank" title="Demo"><i class="fas fa-desktop"></i></a>
+            {% else %}
+              <p><a href="{{job.demo_url}}" target="_blank" class="btn btn-primary my-2">Read more</a></p>
+            {% endif%}
+          </div>
 
         </div>
       </section>
