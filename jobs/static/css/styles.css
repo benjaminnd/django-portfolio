@@ -164,8 +164,20 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: #5f6972;
   text-decoration: underline;
+  font-style: none
+}
+
+.email {
+  text-transform: lowercase;
+  font-family: "Avenir Next";
+  font-weight: 500
+}
+
+.email:hover {
+  font-style:italic;
+  text-transform: lowercase
 }
 
 a:not([href]) {
@@ -361,17 +373,19 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   color: #343a40;
 }
 
 h1, .h1 {
   font-size: 6rem;
+  line-height:1.5
 }
 
 h2, .h2 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
+  line-height: 2.5;
 }
 
 h3, .h3 {
@@ -391,8 +405,8 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .display-1 {
@@ -9813,6 +9827,11 @@ button.bg-dark:focus {
   color: #5bc6ff !important;
 }
 
+.timeline {
+  color: #0da2f2;
+  font-weight: 500;
+}
+
 a.text-primary:hover, a.text-primary:focus {
   color: #824027 !important;
 }
@@ -10036,7 +10055,7 @@ h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -10044,7 +10063,7 @@ p.lead {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .subheading-2 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
