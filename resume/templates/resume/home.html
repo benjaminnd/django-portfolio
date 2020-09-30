@@ -166,14 +166,14 @@
               <div class="container">
                 <div class="row">
     
-                  {% for job in jobs.all %}
+                  {% for project in projects.all %}
     
                       <div class="col-md-4">
-                        <a href="{% url 'detail' job.id %}">
+                        <a href="{% url 'projectdetail' project.id %}">
                           <div class="card mb-4 mr-4 shadow-sm">
-                            <img class="card-img-top" src="{{job.image.url}}" alt="Card image cap">
+                            <img class="card-img-top" src="{{project.image.url}}" alt="Card image cap">
                             <div class="card-body">
-                              <p class="card-text">{{job.name}}</p>
+                              <p class="card-text">{{project.name}}</p>
                             </div>
                           </div>
                         </a>
