@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
   line-height: 1.2;
-  color: #343a40;
+  color: #403c34;
 }
 
 h1, .h1 {
@@ -384,6 +384,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  color: #aa850a;
   font-size: 3.3rem;
   line-height: 2.5;
 }
@@ -405,8 +406,24 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.highlight {
+  list-style: none;
+}
+
+.highlight li::before {
+  content: "";
+  background-image: url('./strength.jpg');
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.2rem;
 }
 
 .display-1 {
@@ -6122,7 +6139,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #5bc6ff !important;
+  background-color: #095680 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9824,7 +9841,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #5bc6ff !important;
+  color: #095680 !important;
 }
 
 .timeline {
@@ -10056,14 +10073,14 @@ h1 {
 
 p.lead {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .subheading-2 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

@@ -35,7 +35,7 @@
       <section class="jumbotron">
         <div class="container">
           <div class="d-flex justify-content-between">
-            <h2 class="mb-5">{{project.name}}</h2>
+            <h2 class="mb-5">{{job.name}}</h2>
             <p>
 
               <a href="{% url 'backhome' %}" class="btn btn-primary my-2">Back</a>
@@ -43,15 +43,15 @@
             
           </div>
           
-          <p class="lead text-muted">{{project.summary}}.</p>
-          <img src="{{project.image.url}}" height=200  alt="">
+          <p class="lead text-muted">{{job.summary}}.</p>
+          <img src="{{job.image.url}}" height=200  alt="">
           <div class="social-icons mb-5 mt-5">
-            {% if project.is_personal %}
+            {% if job.is_personal %}
             <p>Show code or demo</p>
-            <a class="social-icon" title="Show code"href="{{project.github_url}}" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="social-icon"  href="{{project.demo_url}}" target="_blank" title="Demo"><i class="fas fa-desktop"></i></a>
+            <a class="social-icon" title="Show code"href="{{job.github_url}}" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-icon"  href="{{job.demo_url}}" target="_blank" title="Demo"><i class="fas fa-desktop"></i></a>
             {% else %}
-              <p><a href="{{project.demo_url}}" target="_blank" class="btn btn-primary my-2">Read more</a></p>
+              <p><a href="{{job.demo_url}}" target="_blank" class="btn btn-primary my-2">Read more</a></p>
             {% endif%}
           </div>
 
