@@ -47,9 +47,10 @@
           <img src="{{project.image.url}}" height=200  alt="">
           <div class="social-icons mb-5 mt-5">
             {% if project.is_personal %}
-            <p>Show code or demo</p>
+            <p>View website or show code</p>
+            <p>Credentials used for testing: {{project.admin_credentials}}</p>
+            <a class="social-icon"  href="{{project.demo_url}}" target="_blank" title="View website"><i class="fas fa-desktop"></i></a>
             <a class="social-icon" title="Show code"href="{{project.github_url}}" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="social-icon"  href="{{project.demo_url}}" target="_blank" title="Demo"><i class="fas fa-desktop"></i></a>
             {% else %}
               <p><a href="{{project.demo_url}}" target="_blank" class="btn btn-primary my-2">Read more</a></p>
             {% endif%}
